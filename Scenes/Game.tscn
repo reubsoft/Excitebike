@@ -1,0 +1,301 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Scenes/Tileset/Tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Assets/Sprites/excitebike.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Hero.gd" type="Script" id=3]
+[ext_resource path="res://Script/Camera.gd" type="Script" id=4]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 4.42537
+height = 0.0
+
+[sub_resource type="Animation" id=2]
+resource_name = "-15"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 0, 32, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "-30"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 32, 32, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "-45"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 64, 32, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "-60"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 96, 32, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "-75"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 128, 32, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "-90"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 160, 32, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "0"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 32, 0, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "15"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 0, 64, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "30"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 0, 64, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "45"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 64, 64, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "60"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 96, 64, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.18
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 128, 0, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 0, 0, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Rect2( 32, 0, 32, 32 ), Rect2( 64, 0, 32, 32 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 0.18
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 96, 0, 32, 32 ) ]
+}
+
+[node name="Game" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 254, 79 )
+format = 1
+tile_data = PoolIntArray( -2, 1, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 0, -65531, 1, 0, -65530, 1, 0, -65529, 1, 0, -65528, 1, 0, -65527, 1, 0, -65526, 1, 0, -65525, 1, 0, -65524, 1, 0, -65523, 1, 0, -65522, 1, 0, -65521, 1, 0, -65520, 1, 0, -65519, 1, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 51, 111 )
+show_collision = true
+format = 1
+tile_data = PoolIntArray( -65529, 3, 0, -65528, 3, 0, -65527, 3, 0, -65521, 3, 0, -65517, 3, 0, -65501, 2, 0, -65492, 3, 0, -65491, 3, 0, -65490, 3, 0, -65486, 4, 0, -65483, 4, 0, -65480, 5, 0, -65476, 6, 0 )
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2( 60.6222, -75.6288 )
+current = true
+zoom = Vector2( 0.5, 0.3 )
+script = ExtResource( 4 )
+player = NodePath("../Hero")
+offset_cam_y = 0
+
+[node name="Hero" type="KinematicBody2D" parent="."]
+position = Vector2( -30.9543, -38.4945 )
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Hero"]
+position = Vector2( 0, -10 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 32, 32, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hero"]
+position = Vector2( 0, 6 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Hero"]
+anims/-15 = SubResource( 2 )
+anims/-30 = SubResource( 3 )
+anims/-45 = SubResource( 4 )
+anims/-60 = SubResource( 5 )
+anims/-75 = SubResource( 6 )
+anims/-90 = SubResource( 7 )
+anims/0 = SubResource( 8 )
+anims/15 = SubResource( 9 )
+anims/30 = SubResource( 10 )
+anims/45 = SubResource( 11 )
+anims/60 = SubResource( 12 )
+anims/Down = SubResource( 13 )
+anims/Idle = SubResource( 14 )
+anims/Run = SubResource( 15 )
+anims/Up = SubResource( 16 )
